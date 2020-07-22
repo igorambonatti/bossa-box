@@ -1,8 +1,8 @@
-# Projeto feito em um desafio da bossa-box(ツ)
+# Projeto feito em um desafio da BossaBox (ツ)
 
 ### Desafio | Frontend Developer
 
-> **Link da aplicação no Netlify:** ###falta adicionar.
+> **Link da aplicação no Netlify:** https://determined-mclean-10d7f4.netlify.app/
 
 ## ATENÇÃO, É NECESSÁRIO RODAR UM BACKEND FAKE, QUE FOI DISPONIBILIZADO PELA BOSSABOX NO SEGUINTE LINK:
 
@@ -15,7 +15,7 @@
 ## Instruções caso queira rodar o FRONTEND localmente:
 
 - Faça o download da aplicação e rode o comando **yarn install** para instalar todas as dependencias do projeto;
-- Após installar todas as dependencias, rode **yarn start** para vizualizar a aplicação na web
+- Após installar todas as dependencias, rode **yarn start** para vizualizar a aplicação na web(Cuidado para não "roubar" a porta 3000);
 
 > Garanta que você possui o Node.js e o Yarn devidamente instalado.
 
