@@ -7,12 +7,14 @@ export const Container = styled.div`
     margin-top: 50px;
     display: flex;
     justify-content: space-between;
+    align-items: center;
     .addOpt {
       border: 2px solid #000;
       width: 100px;
     }
     .searchSection {
       display: flex;
+      align-items: center;
       .searchOpt {
         display: flex;
         input {
@@ -68,7 +70,7 @@ export const StyledModal = Modal.styled`
   border: 4px solid #000;
   padding: 25px;
   @media (max-width: 880px) {
-    width: 75%;
+    width: 90%;
   }
   @media (max-width: 400px) {
     width: 100%;
