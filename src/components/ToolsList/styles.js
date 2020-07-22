@@ -20,9 +20,7 @@ export const Tools = styled.div`
     max-width: 95%;
     display: flex;
     flex-wrap: wrap;
-    @media (max-width: 470px) {
-      display: block;
-    }
+
     p {
       font-weight: bold;
       margin-right: 5px;

@@ -4,7 +4,7 @@
 
 > **Link da aplicação no Netlify:** ###falta adicionar.
 
-## ATENÇÃO, É NECESSÁRIO RODAR UM BACKEND FAKE, QUE FOI DISPONIBILIZADO PELA BOSSA-BOX NO SEGUINTE LINK:
+## ATENÇÃO, É NECESSÁRIO RODAR UM BACKEND FAKE, QUE FOI DISPONIBILIZADO PELA BOSSABOX NO SEGUINTE LINK:
 
 - https://gitlab.com/bossabox/challenge-fake-api/tree/master
 
@@ -12,7 +12,7 @@
 
 ---
 
-## Instruções caso queira rodar o front-end localmente:
+## Instruções caso queira rodar o FRONTEND localmente:
 
 - Faça o download da aplicação e rode o comando **yarn install** para instalar todas as dependencias do projeto;
 - Após installar todas as dependencias, rode **yarn start** para vizualizar a aplicação na web
