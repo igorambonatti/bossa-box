@@ -1,68 +1,56 @@
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+# Projeto feito em um desafio da bossa-box(ツ)
 
-## Available Scripts
+### Desafio | Frontend Developer
 
-In the project directory, you can run:
+> **Link da aplicação no Netlify:** ###falta adicionar.
 
-### `yarn start`
+## ATENÇÃO, É NECESSÁRIO RODAR UM BACKEND FAKE, QUE FOI DISPONIBILIZADO PELA BOSSA-BOX NO SEGUINTE LINK:
 
-Runs the app in the development mode.<br />
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+- https://gitlab.com/bossabox/challenge-fake-api/tree/master
 
-The page will reload if you make edits.<br />
-You will also see any lint errors in the console.
+> Garanta que o json-server rode na porta 3000, caso queria mudar a porta, basta mudar a rota utilizada em src/services/api.js no arquivo do frontend.
 
-### `yarn test`
+---
 
-Launches the test runner in the interactive watch mode.<br />
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+## Instruções caso queira rodar o front-end localmente:
 
-### `yarn build`
+- Faça o download da aplicação e rode o comando **yarn install** para instalar todas as dependencias do projeto;
+- Após installar todas as dependencias, rode **yarn start** para vizualizar a aplicação na web
 
-Builds the app for production to the `build` folder.<br />
-It correctly bundles React in production mode and optimizes the build for the best performance.
+> Garanta que você possui o Node.js e o Yarn devidamente instalado.
 
-The build is minified and the filenames include the hashes.<br />
-Your app is ready to be deployed!
+---
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+### Resumo:
 
-### `yarn eject`
+- Projeto construido utilizando HTML, CSS E JavaScipt com a biblioteca React e todo seu ecossistema. Busquei me aproximar ao máximo do layout modelo utilizando parte do style-guide da sugerido, dando vida com JavaScript.
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+---
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+### Layout:
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
+- Layout construido de forma simples, procurando trazer simplicidade e desempenho. Utilizei os styled componentes buscando aplimorar e simplificar o CSS.
 
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
+---
 
-## Learn More
+### Funcionamento da página:
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+- Inicialmente a página carrega de forma em que o useEffect tem a função de carregar a lista das ferramentas presentes iniciais da fake api. Com a requisição feita, e a lista já armazenada em um estado da aplicação, uso o método .map que faz a leitura do estado e me devolve os itens que são carregados em tela.
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+- Com todo o layout carregado, apresenta-se as funcionalidades de procurar, adicionar e excluir as ferramnetas, sendo executadas a partir do preenchimento e click no botão de submit.
 
-### Code Splitting
+---
 
-This section has moved here: https://facebook.github.io/create-react-app/docs/code-splitting
+### Ferramentas/Bibliotecas utilizadas:
 
-### Analyzing the Bundle Size
+- Axios
+- Reactotron (utlizado para debug em ambiente de desenvolvimento)
+- ReactJs
+- Redux
+- Redux Saga
+- Styled Components
+- Eslint, editorConfig, prettierrc(Buscando padronizar o código)
 
-This section has moved here: https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size
+---
 
-### Making a Progressive Web App
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app
-
-### Advanced Configuration
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/advanced-configuration
-
-### Deployment
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/deployment
-
-### `yarn build` fails to minify
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify
+**Obrigado (ツ)**

@@ -8,6 +8,7 @@ export const Tools = styled.div`
   padding: 15px;
   margin: 30px 0 30px 0;
   border: 4px solid #000;
+  word-wrap: break-word;
   h2 {
     font-style: none;
     font-size: 15px;
@@ -18,6 +19,7 @@ export const Tools = styled.div`
   .tags {
     max-width: 95%;
     display: flex;
+    flex-wrap: wrap;
     @media (max-width: 470px) {
       display: block;
     }
