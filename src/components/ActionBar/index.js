@@ -1,7 +1,11 @@
 import React, { useState, useEffect } from "react";
 
 import { useDispatch } from "react-redux";
-import { searchWithTags, searchTools } from "../../store/modules/tools/action";
+import {
+  searchWithTags,
+  searchTools,
+  createTool,
+} from "../../store/modules/tools/action";
 
 import { Container, Button, StyledModal } from "./styles";
 
@@ -14,6 +18,12 @@ function ActionBar() {
   const [tech, setTech] = useState("");
   const [tags, setTags] = useState(false);
   const [modal, setModal] = useState(false);
+  const [data, setData] = useState({
+    title: "",
+    link: "",
+    description: "",
+    tags: "",
+  });
 
   useEffect(() => {
     if (tags) {
@@ -23,11 +33,56 @@ function ActionBar() {
     }
   }, [tech, tags]); // eslint-disable-line
 
+  function requestTool() {
+    dispatch(createTool({ data }));
+    setModal(false);
+  }
   return (
     <Container>
       <StyledModal isOpen={modal}>
-        <h1>Add new tool</h1>
-        <button onClick={() => setModal(false)}>Close me</button>
+        <div className="headModal">
+          <img src={AddIcon} alt="Search Option"></img>
+          <h1>Add new tool</h1>
+        </div>
+        <div>
+          <label>Tool Name</label>
+          <input
+            type="text"
+            onChange={(event) =>
+              setData({ ...data, title: event.target.value })
+            }
+          />
+        </div>
+        <div>
+          <label>Tool Link</label>
+          <input
+            type="text"
+            onChange={(event) => setData({ ...data, link: event.target.value })}
+          />
+        </div>
+        <div>
+          <label>Tool description</label>
+          <textarea
+            name=""
+            id=""
+            cols="30"
+            rows="10"
+            onChange={(event) =>
+              setData({ ...data, description: event.target.value })
+            }
+          ></textarea>
+        </div>
+        <div>
+          <label>Tags (separe por virgula)</label>
+          <input
+            type="text"
+            onChange={(event) => setData({ ...data, tags: event.target.value })}
+          />
+        </div>
+        <div className="navButtons">
+          <button onClick={() => setModal(false)}>Cancel</button>
+          <button onClick={() => requestTool()}>Add tool</button>
+        </div>
       </StyledModal>
       <div className="actionBar">
         <div className="searchSection">

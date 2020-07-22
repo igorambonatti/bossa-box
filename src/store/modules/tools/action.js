@@ -18,3 +18,21 @@ export function loadToolsSucces(data) {
     payload: { data },
   };
 }
+export function removeTool(id) {
+  return {
+    type: ToolsTypes.REMOVE_TOOL,
+    payload: { id },
+  };
+}
+export function reloadTools() {
+  return {
+    type: ToolsTypes.RELOAD_TOOLS,
+    payload: {},
+  };
+}
+export function createTool(data) {
+  return {
+    type: ToolsTypes.CREATE_TOOL,
+    payload: { data },
+  };
+}
