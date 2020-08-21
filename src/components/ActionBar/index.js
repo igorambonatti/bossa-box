@@ -7,7 +7,17 @@ import {
   createTool,
 } from "../../store/modules/tools/action";
 
-import { Container, Button, StyledModal } from "./styles";
+import {
+  Container,
+  Button,
+  StyledModal,
+  Input,
+  Bar,
+  Check,
+  ModalInput,
+  Field,
+  CancelButton,
+} from "./styles";
 
 import AddIcon from "../../assets/Icon-Close-2px.svg";
 import SearchIcon from "../../assets/Icon-Search-2px.svg";
@@ -41,73 +51,68 @@ function ActionBar() {
     <Container>
       <StyledModal isOpen={modal}>
         <div className="headModal">
-          <img src={AddIcon} alt="Search Option"></img>
           <h1>Add new tool</h1>
         </div>
-        <div>
+        <Field>
           <label>Tool Name</label>
-          <input
+          <ModalInput
             type="text"
             onChange={(event) =>
               setData({ ...data, title: event.target.value })
             }
           />
-        </div>
-        <div>
+        </Field>
+        <Field>
           <label>Tool Link</label>
-          <input
+          <ModalInput
             type="text"
             onChange={(event) => setData({ ...data, link: event.target.value })}
           />
-        </div>
-        <div>
+        </Field>
+        <Field>
           <label>Tool description</label>
           <textarea
-            name=""
-            id=""
-            cols="30"
-            rows="10"
             onChange={(event) =>
               setData({ ...data, description: event.target.value })
             }
           ></textarea>
-        </div>
-        <div>
+        </Field>
+        <Field>
           <label>Tags (separe por virgula)</label>
-          <input
+          <ModalInput
             type="text"
             onChange={(event) => setData({ ...data, tags: event.target.value })}
           />
-        </div>
+        </Field>
         <div className="navButtons">
-          <button onClick={() => setModal(false)}>Cancel</button>
-          <button onClick={() => requestTool()}>Add tool</button>
+          <CancelButton onClick={() => setModal(false)}>Cancel</CancelButton>
+          <Button onClick={() => requestTool()}>Add tool</Button>
         </div>
       </StyledModal>
-      <div className="actionBar">
+      <Bar>
         <div className="searchSection">
           <div className="searchOpt">
             <img src={SearchIcon} alt="Search Option"></img>
-            <input
+            <Input
               type="text"
-              placeholder="search"
+              placeholder="Digite o que está procurando..."
               onChange={(event) => setTech(event.target.value)}
             />
           </div>
-          <div className="tagsOnly">
-            <input
+          <Check>
+            <Input
               type="checkbox"
-              className="check"
+              className="checkbox"
               onChange={(event) => setTags(event.target.checked)}
             />
             <label>search in tags only</label>
-          </div>
+          </Check>
         </div>
         <Button className="addOpt" onClick={() => setModal(true)}>
-          <img src={AddIcon} alt="Search Option"></img>
+          <img src={AddIcon} color="#fff" alt="Search Option"></img>
           Add
         </Button>
-      </div>
+      </Bar>
     </Container>
   );
 }

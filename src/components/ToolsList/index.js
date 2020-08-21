@@ -6,7 +6,7 @@ import { removeTool } from "../../store/modules/tools/action";
 
 import api from "../../services/api";
 
-import { Container, Tools, StyledModal } from "./styles";
+import { Container, Tools, StyledModal, RemoveButton } from "./styles";
 
 import RemoveIcon from "../../assets/Icon-Close-2px.svg";
 
@@ -41,17 +41,16 @@ function ToolsList() {
     <Container>
       <StyledModal isOpen={modal}>
         <header>
-          <img
-            src={RemoveIcon}
-            alt="closeIcon"
-            onClick={() => setModal(false)}
-          />
           <h1>Remove Tool</h1>
         </header>
         <p>Are you sure you want to remove?</p>
         <div>
-          <button onClick={() => setModal(false)}>Cancel</button>
-          <button onClick={() => removeTools()}>Yes, remove</button>
+          <button className="secundary" onClick={() => setModal(false)}>
+            Cancel
+          </button>
+          <button className="primary" onClick={() => removeTools()}>
+            Yes, remove
+          </button>
         </div>
       </StyledModal>
       {tools.map((tool) => (
@@ -60,10 +59,10 @@ function ToolsList() {
             <a href={tool.link}>
               <h1>{tool.title}</h1>
             </a>
-            <button onClick={() => openModal(tool.id)}>
+            <RemoveButton onClick={() => openModal(tool.id)}>
               <img src={RemoveIcon} alt="" />
               remove
-            </button>
+            </RemoveButton>
           </div>
           <h2>{tool.description}</h2>
           <div className="tags">

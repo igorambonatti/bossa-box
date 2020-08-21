@@ -3,13 +3,13 @@ import styled from "styled-components";
 export const Container = styled.div`
   margin-top: 50px;
   .infoName {
-    color: #000;
+    color: #170c3a;
     h1 {
-      font-size: 55px;
+      font-size: 42px;
     }
     h2 {
       margin-top: 10px;
-      font-size: 33px;
+      font-size: 36px;
     }
   }
 `;
