@@ -6,12 +6,22 @@ export const Bar = styled.div`
   display: flex;
   justify-content: space-between;
   align-items: center;
-
+  @media (max-width: 500px) {
+    display: block;
+  }
   .searchSection {
     display: flex;
     align-items: center;
+    width: 65%;
+    @media (max-width: 500px) {
+      width: 100%;
+      margin-bottom: 10px;
+    }
     .searchOpt {
       display: flex;
+      width: 100%;
+      min-width: 160px;
+      max-width: 403px;
 
       img {
         position: absolute;
@@ -25,14 +35,14 @@ export const Bar = styled.div`
 
 export const Container = styled.div``;
 export const Input = styled.input`
-  width: 403px;
+  width: 100%;
   height: 50px;
   background: #f5f4f6 0% 0% no-repeat padding-box;
   border: 1px solid #ebeaed;
   border-radius: 5px;
   opacity: 1;
   text-align: left;
-  font: normal normal normal 20px/26px Source Sans Pro;
+  font-size: 20px;
   letter-spacing: 0.4px;
   color: #170c3a;
   opacity: 1;
@@ -122,7 +132,7 @@ box-shadow: 0px 20px 25px #0000001A;
 border-radius: 5px;
 padding:25px;
 opacity: 1;
-  @media (max-width: 880px) {
+  @media (max-width: 1000px) {
     width: 90%;
   }
   @media (max-width: 400px) {

@@ -47,8 +47,7 @@ export const Tools = styled.div`
 export const RemoveButton = styled.button`
   background: #f95e5a 0% 0% no-repeat padding-box;
   border-radius: 5px;
-  width: 174px;
-  height: 50px;
+  padding: 10px;
   font-size: 18px;
   font: normal normal 600 18px/24px Source Sans Pro;
   letter-spacing: 0.36px;
@@ -98,7 +97,7 @@ opacity: 1;
     display:flex;
     justify-content:flex-end;
     .primary{
-      width: 122px;
+      width: 50px;
       height: 50px;
       background: #F95E5A 0% 0% no-repeat padding-box;
       border-radius: 5px;
