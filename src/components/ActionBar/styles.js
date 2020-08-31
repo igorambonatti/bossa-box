@@ -6,17 +6,10 @@ export const Bar = styled.div`
   display: flex;
   justify-content: space-between;
   align-items: center;
-  @media (max-width: 500px) {
-    display: block;
-  }
   .searchSection {
     display: flex;
     align-items: center;
     width: 65%;
-    @media (max-width: 500px) {
-      width: 100%;
-      margin-bottom: 10px;
-    }
     .searchOpt {
       display: flex;
       width: 100%;
@@ -29,6 +22,25 @@ export const Bar = styled.div`
         margin-left: 15px;
         width: 25px;
       }
+    }
+  }
+  @media (max-width: 768px) {
+    flex-direction: column;
+    .searchSection {
+      width: 100%;
+      flex-direction: column;
+      margin-bottom: 10px;
+      .searchOpt {
+        width: 100%;
+        max-width: 100%;
+        input {
+          margin-bottom: 5px;
+          width: 100%;
+        }
+      }
+    }
+    button {
+      width: 100%;
     }
   }
 `;
@@ -54,6 +66,7 @@ export const Button = styled.button`
   width: 174px;
   height: 50px;
   font-size: 18px;
+  cursor: pointer;
   font: normal normal 600 18px/24px Source Sans Pro;
   letter-spacing: 0.36px;
   color: #ffffff;
@@ -120,6 +133,7 @@ export const CancelButton = styled.button`
   letter-spacing: 0.36px;
   color: #ffffff;
   opacity: 1;
+  cursor: pointer;
   :hover {
     background: #cc4c4c 0% 0% no-repeat padding-box;
   }

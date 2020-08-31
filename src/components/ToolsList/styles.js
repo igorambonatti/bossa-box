@@ -45,6 +45,7 @@ export const Tools = styled.div`
   }
 `;
 export const RemoveButton = styled.button`
+  cursor: pointer;
   background: #f95e5a 0% 0% no-repeat padding-box;
   border-radius: 5px;
   padding: 10px;
@@ -97,7 +98,7 @@ opacity: 1;
     display:flex;
     justify-content:flex-end;
     .primary{
-      width: 50px;
+      width: 122px;
       height: 50px;
       background: #F95E5A 0% 0% no-repeat padding-box;
       border-radius: 5px;
@@ -108,6 +109,7 @@ opacity: 1;
       color: #FFFFFF;
       opacity: 1;
       margin-left:39px;
+      cursor: pointer;
       :hover{
         background: #CC4C4C 0% 0% no-repeat padding-box;
       }
@@ -123,6 +125,7 @@ opacity: 1;
       letter-spacing: 0.36px;
       color: #FFFFFF;
       opacity: 1;
+      cursor: pointer;
       :hover{
         background: #2F55CC 0% 0% no-repeat padding-box;
       }
