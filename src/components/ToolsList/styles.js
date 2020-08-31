@@ -48,12 +48,9 @@ export const RemoveButton = styled.button`
   cursor: pointer;
   background: #f95e5a 0% 0% no-repeat padding-box;
   border-radius: 5px;
-  padding: 10px;
-  font-size: 18px;
-  font: normal normal 600 18px/24px Source Sans Pro;
-  letter-spacing: 0.36px;
+  padding: 14px 26px 14px 26px;
+  font: normal normal 600 18px Source Sans Pro;
   color: #ffffff;
-  opacity: 1;
   :hover {
     background: #cc4c4c 0% 0% no-repeat padding-box;
   }
@@ -63,7 +60,7 @@ export const RemoveButton = styled.button`
   }
 `;
 export const StyledModal = Modal.styled`
-width: 960px;
+width: 600px;
 background-color:#F5F4F6;
 background: #FFFFFF 0% 0% no-repeat padding-box;
 box-shadow: 0px 20px 25px #0000001A;

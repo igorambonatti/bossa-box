@@ -63,8 +63,7 @@ export const Input = styled.input`
 export const Button = styled.button`
   background: #365df0 0% 0% no-repeat padding-box;
   border-radius: 5px;
-  width: 174px;
-  height: 50px;
+  padding: 14px 26px 14px 26px;
   font-size: 18px;
   cursor: pointer;
   font: normal normal 600 18px/24px Source Sans Pro;
@@ -125,9 +124,8 @@ export const Field = styled.div`
 `;
 export const CancelButton = styled.button`
   background: #f95e5a 0% 0% no-repeat padding-box;
+  padding: 14px 26px 14px 26px;
   border-radius: 5px;
-  width: 174px;
-  height: 50px;
   font-size: 18px;
   font: normal normal 600 18px/24px Source Sans Pro;
   letter-spacing: 0.36px;
